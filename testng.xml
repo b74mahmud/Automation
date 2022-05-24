@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- <suite name="Multi_Project" parallel="methods"> -->
+<suite name="Multi_Project">
+
+	<listeners>
+
+		<listener class-name="com.utilities.Reporting" />
+
+	</listeners>
+
+	<test name="Test">
+
+		<!-- <parameter name="url" value="https://smms-hub.rcms.local/v3/AUVS" /> -->
+
+		<!-- <parameter name="url" value="https://smms-hub.rcms.local/v3/RMS/" /> -->
+		
+		<parameter name="url" value="https://demo.opencart.com/admin/index.php?route=account/" />
+		
+
+		<parameter name="username" value="kevin.shook" />
+		<parameter name="password" value="pwd" />
+		<parameter name="login" value="normal" />
+
+		<classes>
+
+			<!-- <class name="com.testCases.Sample_OriginalTest08"/> -->
+			<!-- <class name="com.testCases.LoginTest_01" /> -->
+		
+			<!-- <class name="com.testCases.RMS_ManagementCenterTest05" /> -->
+		
+			
+			<class name="com.testCases.AdministrationCenter_Test" />
+	
+	<!-- 	<class name="com.testCases.ManagementCenter_TreeItemCountInTable_Test_02" /> -->
+	<!-- 	<class name="com.testCases.ManagementCenter_TreeItemPanelInTable_Test_3" /> -->
+		
+		<!-- 	<class name="com.testCases.BladeValidationTest03" /> -->
+			<!-- <class name="com.testCases.ReportCenterTest07" /> -->
+		<!-- 	<class name="com.testCases.SearchBladeTest06" /> -->
+		<!-- 	<class name="com.testCases.Panel1_ClickRecordAndSeePanel3And4OpensTest" /> -->
+			
+			
+			
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

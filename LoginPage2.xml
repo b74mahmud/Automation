@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Multi_Project">
+
+<listeners>
+
+		<listener class-name="com.smms.utilities.Reporting" />
+
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+  
+<!-- <parameter name="url" value="https://smms-hub.rcms.local/v3/AUVS" /> -->
+
+<parameter name="url" value="https://smms-hub.rcms.local/v4/UMT/UMT/Access/RequestAccess?AppNameFilter=AUVS" />
+<parameter name="username" value="Test101" />
+
+<!-- <parameter name="url" value="https://smms-hub.rcms.local/v3/RMS/" /> -->
+<!-- <parameter name="username" value="kevin.shook" /> -->
+<parameter name="password" value="pwd" />
+<parameter name="login" value="normal1" />
+  
+    <classes>
+
+      <class name="com.smms.testCases.Multi_ManagementCenter_Test_02"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
